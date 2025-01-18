@@ -62,6 +62,7 @@
                     <div class="mb-2">
                         <label class="form-label">Product Image:</label>
                         <input type="file" name="product_image" class="form-control">
+                        <img src="{{ asset('images') }}/{{ $product->image }}" alt="Product Image" class="img-thumbnail" style="width: 50px; height: 50px;">
                         @error('product_image')
                         <span class="text-danger">{{ $message }}</span>
                          @enderror
